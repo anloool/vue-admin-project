@@ -1,5 +1,124 @@
-.layout {
-  //width: 100%;
-  //height: 100%;
-  //background-color: antiquewhite;
+#app {
+  height: 100%;
+  .wrapper {
+    width: 100%;
+    height: 100%;
+  }
+  .wrapper-hearder {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 9999;
+  }
+  .wrapper-main {
+    width: 100%;
+    height: calc(100% - 50px);
+    padding-top: 50px;
+  }
+}
+/*
+* header
+*/
+.page-header {
+  .header-l {
+    width: 200px;
+    height: 100%;
+    float: left;
+    background-color: #3a3f51;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 1px solid #454b61;
+    -webkit-transition: width .3s;
+    transition: width .3s;
+    overflow: hidden;
+    .logo {
+      color: #fff!important;
+      font-size: 12px;
+      margin-left: 18px;
+      display: inline-block;
+      font-weight: 700;
+      height: 100%;
+      line-height: 50px;
+      img {
+        height: 28px;
+        vertical-align: middle;
+        margin-right: 8px;
+        position: relative;
+        top: -3px;
+      }
+    }
+  }
+  .header-r {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    height: 100%;
+    margin-left: 200px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 2px 2px rgba(0,0,0,.05), 0 1px 0 rgba(0,0,0,.05);
+    box-shadow: 0 2px 2px rgba(0,0,0,.05), 0 1px 0 rgba(0,0,0,.05);
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    .breadcrumb {
+      flex: 1;
+      height: 100%;
+      margin-left: 20px;
+      line-height: 50px;
+    }
+    .header-ul {
+      flex: 1;
+      text-align: right;
+      margin-right: 20px;
+      li {
+        height: 50px;
+        line-height: 50px;
+        display:inline-block;
+        padding-left: 20px;
+        vertical-align: middle;
+        .el-badge__content.is-fixed.is-dot {
+          right: 9px;
+          top: 16px;
+        }
+        .user-img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          vertical-align: middle;
+          margin-left: 10px;
+        }
+      }
+    }
+  }  
+}
+
+/*
+* sidebar
+*/
+.side-bar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 200px;
+  height: calc(100% - 50px);
+  background-color: #3a3f51;
+  overflow: hidden;
+  z-index: 999;
+  .el-scrollbar {
+    height: 100%;
+  }
+  .el-menu {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+}
+
+/*
+*
+*/
+.page-main {
+  height: 100%;
+  margin-left: 200px;
 }

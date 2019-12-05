@@ -1,19 +1,20 @@
 <template>
-  <div class="pagemain"></div>
+  <div class="page-main">
+    <transition name="fade-page" mode="out-in">
+      <!-- <keep-alive>
+        <router-view v-if="!$route.meta.noCache"></router-view>
+      </keep-alive> -->
+      <router-view></router-view>
+    </transition>
+  </div>
 </template>
 <script lang="ts">
 import { Vue, Component } from 'vue-property-decorator'
 @Component({
-  name: 'PageMain'
+  name: 'pageMain'
 })
+
 export default class PageMain extends Vue {
+
 }
 </script>
-<style lang="less" scoped>
-  .pagemain {
-    height: 100%;
-    margin-left: 200px;
-    -webkit-transition: all .3s;
-    transition: all .3s;
-  }
-</style>

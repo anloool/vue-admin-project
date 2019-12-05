@@ -6,8 +6,6 @@ module.exports = {
   publicPath: '/',
   outputDir: 'dist',
   assetsDir: 'static',
-
-  sourceMap: true,
   productionSourceMap: true,
 
   chainWebpack: config => {
@@ -18,7 +16,7 @@ module.exports = {
   pluginOptions: {
     'style-resources-loader': {
       preProcessor: 'less',
-      patterns: [path.resolve(__dirname, '@/assets/css/common.less')]
+      patterns: [path.resolve(__dirname, 'src/assets/css/common.less')]
     }
   },
   devServer: {
