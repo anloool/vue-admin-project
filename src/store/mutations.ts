@@ -19,7 +19,7 @@ export default {
     router.push({
       path: '/login',
       query: {
-          redirect: '/'
+        redirect: '/'
       }
     })
   }

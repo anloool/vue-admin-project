@@ -10,7 +10,7 @@ export default class dashbord extends Vue {
 
 }
 </script>
-<!--<style lang="less" scoped>-->
-<!--.dashbord {-->
-<!--}-->
-<!--</style>-->
+<style lang="less" scoped>
+.dashbord {
+}
+</style>

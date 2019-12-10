@@ -1,21 +1,21 @@
 export const menu = [
   {
-    icon: 'el-icon-s-data',
+    icon: 'dashboard',
     title: '首页',
     index: 'dashbord'
   },
   {
-    icon: 'el-icon-s-flag',
+    icon: 'flag',
     title: '引导指南',
     index: 'flag'
   },
   {
-    icon: 'el-icon-tickets',
+    icon: 'form',
     title: '表单',
     index: 'form',
     subs: [
       {
-        title: '经典表单',
+        title: '普通表单',
         index: 'base-form'
       },
       {
@@ -29,7 +29,7 @@ export const menu = [
     ]
   },
   {
-    icon: 'el-icon-menu',
+    icon: 'table',
     title: '表格',
     index: 'table',
     subs: [
@@ -40,6 +40,26 @@ export const menu = [
       {
         title: '复杂表格',
         index: 'complex-table'
+      }
+    ]
+  },
+  {
+    icon: 'echart',
+    title: '图表',
+    index: 'echart'
+  },
+  {
+    icon: 'excel',
+    title: 'Excel',
+    index: 'excel',
+    subs: [
+      {
+        title: '导出excel',
+        index: 'excel-out'
+      },
+      {
+        title: '导入excel',
+        index: 'excel-in'
       }
     ]
   }

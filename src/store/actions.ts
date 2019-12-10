@@ -30,10 +30,8 @@ export async function _getInfo ({ commit }) {
       } else {
         this.$message.error(res.msg)
       }
-    }).catch (err => {
-      reject (err)
+    }).catch(err => {
+      reject(err)
     })
   })
 }
-
-

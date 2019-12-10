@@ -35,7 +35,7 @@
           </template>
         </el-table-column>
         <el-table-column flex="right" label="操作" width="300">
-          <template>
+          <template slot-scope="scope">
             <el-button plain size="small" type="primary">编辑</el-button>
             <el-button plain size="small" type="warning">审核</el-button>
             <el-button plain size="small" type="success">完成</el-button>
