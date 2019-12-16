@@ -5,7 +5,7 @@ function resolve(dir) {
 }
 
 module.exports = {
-    publicPath: '/',
+    publicPath: './',
     outputDir: 'dist',
 
     // 线上构建的时候，禁用sourcemap
